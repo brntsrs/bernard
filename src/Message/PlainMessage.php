@@ -66,12 +66,12 @@ final class PlainMessage implements Message, \ArrayAccess
         return \array_key_exists($name, $this->arguments);
     }
 
-    public function offsetGet($offset)
+    public function offsetGet($offset) : mixed
     {
         return $this->get($offset);
     }
 
-    public function offsetExists($offset)
+    public function offsetExists($offset) : bool
     {
         return $this->has($offset);
     }
