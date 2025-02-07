@@ -6,8 +6,9 @@ namespace Bernard\Event;
 
 use Bernard\Envelope;
 use Bernard\Queue;
+use Symfony\Component\EventDispatcher\GenericEvent;
 
-class EnvelopeEvent extends \Symfony\Component\EventDispatcher\Event
+class EnvelopeEvent extends GenericEvent
 {
     protected $envelope;
     protected $queue;
