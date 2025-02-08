@@ -5,9 +5,9 @@ declare(strict_types=1);
 namespace Bernard\Event;
 
 use Bernard\Queue;
-use Symfony\Component\EventDispatcher\Event;
+use Symfony\Component\EventDispatcher\GenericEvent;
 
-class PingEvent extends Event
+class PingEvent extends GenericEvent
 {
     protected $queue;
 
